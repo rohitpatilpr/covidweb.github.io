@@ -26,13 +26,13 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/">home</a></li>
-            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/protect.html">protect</a></li>
-            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/symptoms.html">symptoms</a></li>
-            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/prevent.html">prevent</a></li>
-            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/handwash.html">handwash</a></li>
-            <li><a class="https://rohitpatilpr.github.io/covidweb.github.io/">Statistics</a></li>
-            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/about.html">About Team</a></li>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../protect.html">protect</a></li>
+            <li><a href="../symptoms.html">symptoms</a></li>
+            <li><a href="../index.html">prevent</a></li>
+            <li><a href="../handwash.html">handwash</a></li>
+            <li><a class="active" href="index.html">Statistics</a></li>
+            <li><a href="../aboutus.html">About Team</a></li>
      
         </ul>
     </nav>
@@ -56,15 +56,15 @@
         <div class="row text-center">
             <div class="col-4 text-warning">
                 <h5>Confirmed</h5>
-                <?php echo $total_confirmed;?>
+                <div id="cnf"></div>
             </div>
             <div class="col-4 text-success">
                 <h5>Recovered</h5>
-                <?php echo $total_recovered;?>
+                <div id="rec"></div>
             </div>
             <div class="col-4 text-danger">
                 <h5>Deceased</h5>
-                <?php echo $total_deaths;?>
+                <div id="deth"></div>
             </div>
         </div>
     </div>
@@ -81,20 +81,9 @@
                         <th scope="col">Deceased</th>
                     </tr>
                 </thead>
-                <tbody>
-                   
-                        <tr>
-                            <th scope="row"><?php echo $key?></th>
-                            <td>
-                                <?php echo $value[$days_count]['confirmed'];?>
-                                <?php if($increase != 0){ ?>
-                                    <small class="text-danger pl-3"><i class="fas fa-arrow-up"></i><?php echo $increase;?></small>  
-                                <?php } ?>    
-                            </td>
-                            <td></td>
-                            <td><?php echo $value[$days_count]['deaths'];?></td>
-                        </tr>
-                    <?php }?>
+               
+                <tbody id="dataBody">
+                    <!-- Data will be dynamically added here -->
                 </tbody>
             </table>
         </div>
@@ -106,6 +95,7 @@
 
 </section>
 <!-- home section ends -->
+<script src="index.js"></script>
 
 
 </body>
