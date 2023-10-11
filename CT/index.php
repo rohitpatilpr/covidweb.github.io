@@ -29,13 +29,13 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="..//index.html">home</a></li>
-            <li><a href="..//protect.html">protect</a></li>
-            <li><a href="..//symptoms.html">symptoms</a></li>
-            <li><a href="..//prevent.html">prevent</a></li>
-            <li><a href="..//handwash.html">handwash</a></li>
-            <li><a class="active" href="index.php">Statistics</a></li>
-            <li><a href="..//aboutus.html">About Team</a></li>
+            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/">home</a></li>
+            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/protect.html">protect</a></li>
+            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/symptoms.html">symptoms</a></li>
+            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/prevent.html">prevent</a></li>
+            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/handwash.html">handwash</a></li>
+            <li><a class="https://rohitpatilpr.github.io/covidweb.github.io/">Statistics</a></li>
+            <li><a href="https://rohitpatilpr.github.io/covidweb.github.io/about.html">About Team</a></li>
      
         </ul>
     </nav>
