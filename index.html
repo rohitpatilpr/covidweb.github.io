@@ -29,8 +29,7 @@
             <li><a href="prevent.html">prevent</a></li>
             <li><a href="handwash.html">handwash</a></li>
 <!--             <li><a href="CT/index.php">Statistics</a></li> -->
-             <li><a id="loadStatsButton" href="#">Load Statistics</a></li>
-
+          <li><a id="loadStatsButton" href="CT/index.php">Statistics</a></li>
             <li><a href="aboutus.html">About Team</a></li>
         </ul>
     </nav>
@@ -56,15 +55,10 @@
 
 </section>
 <!-- home section ends -->
-<button id="loadStatsButton">Load COVID-19 Stats</button>
-
-<!-- Create a placeholder for the loaded content -->
-<div id="contentDiv"></div>
-
-    <script>
+    
+<script>
     document.addEventListener('DOMContentLoaded', function() {
         const loadStatsButton = document.getElementById('loadStatsButton');
-        const contentDiv = document.getElementById('contentDiv');
 
         loadStatsButton.addEventListener('click', function(event) {
             event.preventDefault();
@@ -73,7 +67,7 @@
             xhr.open('GET', 'CT/index.php', true);
             xhr.onload = function() {
                 if (xhr.status >= 200 && xhr.status < 300) {
-                    contentDiv.innerHTML = xhr.responseText;
+                    document.body.innerHTML = xhr.responseText; // Replace the entire page content with PHP content
                 } else {
                     console.error('Failed to load PHP content');
                 }
@@ -82,6 +76,9 @@
         });
     });
 </script>
+
+
+    
 
 
 
