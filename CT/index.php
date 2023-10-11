@@ -34,7 +34,7 @@
             <li><a href="..//symptoms.html">symptoms</a></li>
             <li><a href="..//prevent.html">prevent</a></li>
             <li><a href="..//handwash.html">handwash</a></li>
-            <li><a class="active" href="CT/index.php">Statistics</a></li>
+            <li><a class="active" href="index.php">Statistics</a></li>
             <li><a href="..//aboutus.html">About Team</a></li>
      
         </ul>
